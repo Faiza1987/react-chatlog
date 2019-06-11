@@ -1,5 +1,6 @@
 import React from 'react';
 import Timestamp from './Timestamp';
+import PropTypes from 'prop-types';
 
 function ChatMessage(props){
   let timeSent = <Timestamp time = {props.timeStamp} />
@@ -15,6 +16,11 @@ function ChatMessage(props){
       </li>
     </section>
   );
+}
+
+ChatMessage.propTypes = {
+  sender: PropTypes.string.isRequired,
+  body: PropTypes.string,
 }
 
 export default ChatMessage;
