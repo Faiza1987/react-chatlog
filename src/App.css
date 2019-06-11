@@ -28,7 +28,6 @@
 /***********************/
 /* Chat message styles */
 /***********************/
-
 .chat-entry {
   margin: 1rem;
 }
@@ -145,3 +144,8 @@
   max-width: 50rem;
   margin: auto;
 }
+
+li{
+  list-style: none;
+}
+
